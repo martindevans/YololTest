@@ -1,0 +1,6 @@
+[msbuild]
+project = "YololTest.sln"
+
+[github]
+user = "martindevans"
+repo = "YololTest"
