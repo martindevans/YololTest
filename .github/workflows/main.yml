@@ -5,7 +5,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy to GitHub Pages
+    name: Create Release
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -22,4 +22,4 @@ jobs:
       shell: bash
       run: |
         dotnet tool install --global dotnet-releaser
-        dotnet-releaser run --github-token "${{secrets.GITHUB_TOKEN}}" src/dotnet-releaser.toml
+        dotnet-releaser run --github-token "${{secrets.GITHUB_TOKEN}}" dotnet-releaser.toml
