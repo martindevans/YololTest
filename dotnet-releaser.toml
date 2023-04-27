@@ -1,6 +1,8 @@
 [msbuild]
 project = "YololTest.sln"
+properties.PublishReadyToRunComposite = true
 
 [github]
 user = "martindevans"
 repo = "YololTest"
+branches = [ "master" ]
